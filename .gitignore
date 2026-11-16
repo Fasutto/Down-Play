@@ -1,0 +1,38 @@
+# Dependencias de Node / pnpm
+node_modules/
+.pnpm-debug.log*
+
+# Compilación del Frontend (Vite) y empaquetados antiguos
+dist/
+dist-ssr/
+release/
+*.local
+
+# Compilación y artefactos de Rust / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+src-tauri/WixTools/
+
+# Binarios externos pesados (superan el límite de 100 MB de GitHub)
+bin/*.exe
+bin/*.dll
+bin/*.zip
+
+# Variables de entorno y configuración local
+.env
+.env.*
+!.env.example
+
+# Archivos de sistema e IDEs
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
